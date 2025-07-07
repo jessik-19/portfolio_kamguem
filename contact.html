@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Me Contacter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="header-apropos">
+    <img src="images/ba.jpg" alt="Bannière Data" class="banniere-img">
+    <div class="banniere-contenu">
+      <h1>Me Contacter</h1>
+      <p>Une question, un projet ou une envie d'échanger ? N'hésitez pas.</p>
+    </div>
+    <nav class="navbar-apropos-bas">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+</section>
+
+<main class="contact-main">
+  <h2 style="text-align:center; color:#262EF6;">Envoyez-moi un message</h2>
+  
+  <form class="contact-form" action="mailto:kamman112000@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Votre Nom & Prénom :</label>
+    <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+
+    <label for="email">Votre Email :</label>
+    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+
+    <label for="message">Votre Message :</label>
+    <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</main>
+
+</body>
+</html>
