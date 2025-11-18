@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Ange Muriel Kamguem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- === HEADER / INTRO === -->
+  <section class="header-apropos index-header">
+  <img src="images/ba.jpg" alt="Bannière Data" class="banniere-img">
+  <div class="banniere-contenu">
+    <h1>Ange Muriel Kamguem Mande</h1>
+    <p>Automatisation – Analyse – Décision – Visualisation – IA appliquée</p>
+  </div>
+  <nav class="navbar-apropos-bas">
+    <ul>
+      <li><a href="index.html" class="active">Accueil / Home</a></li>
+      <li><a href="Projets_global.html">Projets / Projects</a></li>
+      <li><a href="automatisations.html">Apps & Automatisations</a></li>
+      <li><a href="a-propos.html">À propos / About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</section>
+
+  <!-- === CONTENU === -->
+  <main class="hero">
+    <h2>Des données… aux solutions concrètes</h2>
+    <p>Avec mes compétences en Data Engineering et automatisation, je transforme les chiffres en actions mesurables et les process en gains de temps.</p>
+    <div class="btn-cv">
+      <a href="chemin/vers/ton_cv.pdf" target="_blank" class="btn-cv">📄 Télécharger mon CV</a>
+    </div>
+
+
+<!-- === SECTION EXPÉRIENCES === -->
+<section class="experience-section">
+  <h2 class="section-title">Expériences professionnelles</h2>
+
+  <div class="experience-grid">
+
+    <!-- ACCOR -->
+    <div class="experience-card">
+      <img src="images/logo_accor.png" alt="Accor">
+      <h3>Data Quality Analyst – Accor</h3>
+      <p><strong>Septembre 2025 – Février 2026</strong></p>
+      <ul>
+        <li>Contrôle de qualité des données comptables (référentiels, codifications, doublons...)</li>
+        <li>Vérification, nettoyage et fiabilisation des données avec Power BI, Excel et Python</li>
+        <li>Automatisation de contrôles, de tâches récurrentes et envoi des rapports de suivi mensuels</li>
+        <li>Création de <strong>2 applications internes</strong> avec <strong>Python & Streamlit</strong> :</li>
+        <ul>
+          <li>Contrôle des identifiants utilisateurs vs périmètre autorisé</li>
+          <li>Vérification des responsabilités métiers par profil</li>
+        </ul>
+        <li>Collaboration avec les équipes métiers pour identifier les anomalies et proposer des améliorations</li>
+      </ul>
+    </div>
+
+    <!-- SENOVA -->
+    <div class="experience-card">
+      <img src="images/Logo-senova (1).jpg" alt="Senova">
+      <h3>Data Analyst - Senova Paris</h3>
+      <p><strong>Février 2024 - Mai 2024</strong></p>
+      <ul>
+        <li>Conception de dashboards Power BI dynamiques pour le pilotage des performances commerciales (suivi des ventes, taux de conversion, cycle client)</li>
+        <li>Automatisation des reportings hebdomadaires et mensuels à l’aide de Power Query, DAX et Python, réduisant les tâches manuelles de 60 %</li>
+        <li>Structuration d’une base PostgreSQL pour centraliser les données de 3 pôles (ventes, RH, finance), facilitant les jointures et la gouvernance des données</li>
+        <li>Création de KPIs sur-mesure pour aider les managers à anticiper les périodes de sous-performance et identifier les leviers de croissance</li>
+        <li>Intégration de segments clients dans Power BI pour des analyses de rentabilité par profil</li>
+      </ul>
+    </div>
+
+    <!-- INONI TECH -->
+    <div class="experience-card">
+      <img src="images/inonitech.jpg" alt="Inoni Tech">
+      <h3>Développeur IA - Inoni Tech</h3>
+      <p><strong>Novembre 2022 - Juillet 2023</strong></p>
+      <ul>
+        <li>Entraînement d’un modèle CNN (réseaux de neurones convolutifs) avec TensorFlow et Keras, atteignant une précision de 92 % sur les images testées</li>
+        <li>Prétraitement des données : réduction du bruit, normalisation, augmentation des images (rotation, zoom...)</li>
+        <li>Conception d’une application Streamlit pour permettre à des professionnels de santé d’importer des images, visualiser les résultats et obtenir une prédiction claire</li>
+        <li>Visualisation de la performance du modèle : matrice de confusion, ROC curve, indicateurs F1-score, précision et rappel</li>
+      </ul>
+    </div>
+
+    <!-- SEVEN ACADEMY -->
+    <div class="experience-card">
+      <img src="images/SevenAcademy-logo.png" alt="Seven Academy">
+      <h3>Formation Développement Web – Seven Academy</h3>
+      <p><strong>Juillet 2021 – Avril 2022</strong></p>
+      <ul>
+        <li>Apprentissage complet du développement front-end et back-end (HTML, CSS, JavaScript, PHP)</li>
+        <li>Création d’interfaces web interactives et de dashboards esthétiques pour la visualisation de données</li>
+        <li>Approfondissement des bases en bases de données MySQL et intégration de scripts automatisés</li>
+        <li>Projet final : développement d’un mini-dashboard d’analyse en temps réel des ventes</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <script>
+// Animation simple du texte sans ralentir la page
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".fade-in, .slide-up, .fade-in-delay").forEach((el, i) => {
+    setTimeout(() => {
+      el.classList.add("show");
+    }, i * 300);
+  });
+});
+</script>
+<script>
+// Apparition des cartes au défilement
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.experience-card').forEach(card => {
+  observer.observe(card);
+});
+</script>
+<script>
+// Apparition douce du nom et du texte du header
+window.addEventListener("DOMContentLoaded", () => {
+  const name = document.querySelector(".banniere-contenu h1");
+  const subtitle = document.querySelector(".banniere-contenu p");
+
+  // D'abord, on cache tout
+  name.style.opacity = "0";
+  name.style.transform = "translateY(40px)";
+  subtitle.style.opacity = "0";
+  subtitle.style.transform = "translateY(40px)";
+
+  // Le nom apparaît doucement
+  setTimeout(() => {
+    name.style.transition = "opacity 1.8s ease, transform 1.8s ease";
+    name.style.opacity = "1";
+    name.style.transform = "translateY(0)";
+  }, 300);
+
+  // Puis le sous-titre juste après
+  setTimeout(() => {
+    subtitle.style.transition = "opacity 1.6s ease, transform 1.6s ease";
+    subtitle.style.opacity = "1";
+    subtitle.style.transform = "translateY(0)";
+  }, 1500);
+});
+</script>
+
+
+</body>
+</html>

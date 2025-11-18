@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes Projets - Ange Muriel Kamguem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- === HEADER / INTRO UNIFIÉ === -->
+<section class="header-apropos index-header">
+  <img src="images/ba.jpg" alt="Bannière Data" class="banniere-img">
+  <div class="banniere-contenu">
+    <h1>Mes Projets / My Projects</h1>
+    <p>Découvrez mes dashboards, visualisations et automatisations de données</p>
+  </div>
+  <nav class="navbar-apropos-bas">
+    <ul>
+      <li><a href="index.html">Accueil / Home</a></li>
+      <li><a href="Projets_global.html" class="active">Projets / Projects</a></li>
+      <li><a href="automatisations.html">Apps & Automatisations</a></li>
+      <li><a href="a-propos.html">À propos / About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</section>
+
+  <!-- === CONTENU PRINCIPAL === -->
+  <main class="projects-section">
+    <section class="hero">
+      <h2>Projets & Dashboards</h2>
+      <br>
+    </section>
+
+    <section class="projects-bubbles">
+      <div class="project-bubble">
+        <img src="images/VISION1+.png" alt="Vision+" />
+        <div class="bubble-info">
+          <h3>Vision+ – Analyse Vente & Retours Produits</h3>
+          <p>Vue interactive de la performance commerciale et gestion des retours.</p>
+          <a href="visionplus-detail.html" class="btn-bubble">Voir plus</a>
+        </div>
+      </div>
+
+      <div class="project-bubble">
+        <img src="images/Pilotage-Commerciale-Tableau.png" alt="Tableau Desktop" />
+        <div class="bubble-info">
+          <h3>Analyse Commerciale – Tableau Desktop</h3>
+          <p>Suivi des performances produits, rentabilité et segmentation client.</p>
+          <a href="tableau-detail.html" class="btn-bubble">Voir plus</a>
+        </div>
+      </div>
+
+      <div class="project-bubble">
+        <img src="images/digitalNest.png" alt="DigitalNext" />
+        <div class="bubble-info">
+          <h3>DigitalNext – Suivi des Retours Produits</h3>
+          <p>Export PDF automatisé via Power Automate et indicateurs clés.</p>
+          <a href="digitalnext-detail.html" class="btn-bubble">Voir plus</a>
+        </div>
+      </div>
+
+      <div class="project-bubble">
+        <img src="images/logistic.png" alt="VisionPlus Logistique" />
+        <div class="bubble-info">
+          <h3>VisionPlus – Performance Commerciale (Looker)</h3>
+          <p>Analyse croisée des marges et retours produits sur Looker Studio.</p>
+          <a href="logistic-detail.html" class="btn-bubble">Voir plus</a>
+        </div>
+      </div>
+
+      <div class="project-bubble">
+        <img src="images/dashboard-sharepoint.png" alt="Analyse SharePoint" />
+        <div class="bubble-info">
+          <h3>Analyse SharePoint – Fichiers & Répertoires</h3>
+          <p>Détection des doublons, formats et volumétrie des fichiers partagés.</p>
+          <a href="sharepoint-detail.html" class="btn-bubble">Voir plus</a>
+        </div>
+      </div>
+
+      <div class="project-bubble">
+        <img src="images/dashboard-mails.png" alt="Analyse des Mails" />
+        <div class="bubble-info">
+          <h3>Analyse des Mails – Interactions & Suivi</h3>
+          <p>Analyse des échanges internes : volume, fréquence et segmentation.</p>
+          <a href="mails-detail.html" class="btn-bubble">Voir plus</a>
+        </div>
+      </div>
+
+      <div class="project-bubble">
+        <img src="images/Dashboards_Clusters.png" alt="Analyse des Mails Cas Métiers" />
+        <div class="bubble-info">
+          <h3>Analyse des Mails – Cas Métiers</h3>
+          <p>Analyse détaillée des clusters métier et des volumes de mails.</p>
+          <a href="Dashboards_clusters.html" class="btn-bubble">Voir plus</a>
+        </div>
+      </div>
+      <div class="project-bubble">
+  <img src="images/demandes.png" alt="Suivi des Demandes" />
+  <div class="bubble-info">
+    <h3>Suivi des Demandes – Power BI</h3>
+    <p>Analyse complète des demandes internes : créations, modifications, typologies et performance.</p>
+    <a href="suivi_demandes.html" class="btn-bubble">Voir plus</a>
+  </div>
+</div>
+
+    </section>
+  </main>
+
+  <!-- === TOUS LES SCRIPTS === -->
+  <script>
+
+// Effet de profondeur uniquement sur les bulles, pas sur les titres
+
+// === GOUTTES DORÉES – PLUIE LUMINEUSE ===
+const section = document.querySelector('.projects-section');
+
+// 🔥 150 gouttes pour un effet visible et homogène
+for (let i = 0; i < 150; i++) {
+  const drop = document.createElement('div');
+  drop.classList.add('raindrop');
+
+  // position aléatoire sur tout l’écran
+  drop.style.left = Math.random() * 100 + 'vw';
+  drop.style.top = (Math.random() * 60 + 40) + 'vh';
+  drop.style.width = drop.style.height = (Math.random() * 6 + 2) + 'px';
+  drop.style.animationDuration = (Math.random() * 6 + 3) + 's';
+  drop.style.animationDelay = Math.random() * 5 + 's';
+
+  section.appendChild(drop);
+}
+
+// === BULLES BLANCHES LUMINEUSES ===
+// 🔥 80 bulles réparties sur toute la hauteur
+for (let i = 0; i < 80; i++) {
+  const bubble = document.createElement('div');
+  bubble.classList.add('white-bubble');
+
+  bubble.style.left = Math.random() * 100 + 'vw';
+  bubble.style.top = (Math.random() * 60 + 40) + 'vh';
+  const size = Math.random() * 10 + 3;
+  bubble.style.width = bubble.style.height = `${size}px`;
+  bubble.style.animationDuration = (Math.random() * 6 + 7) + 's';
+  bubble.style.animationDelay = (Math.random() * 5) + 's';
+
+  section.appendChild(bubble);
+}
+
+// Animation légère et élégante des bulles (comme un flottement)
+document.querySelectorAll('.project-bubble').forEach((bubble, index) => {
+  bubble.style.animation = `float 6s ease-in-out ${index * 0.3}s infinite`;
+});
+
+</script>
+
+</body>
+</html>
+
+
