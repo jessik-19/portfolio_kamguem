@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard – Véhicules Électriques</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!-- === HEADER UNIFIÉ === -->
+<section class="header-apropos index-header">
+  <img src="images/ba.jpg" class="banniere-img" alt="Bannière Data">
+
+  <div class="banniere-contenu">
+    <h1>Analyse des Véhicules Électriques</h1>
+    <p>KPIs, filtres dynamiques et visualisations interactives.</p>
+  </div>
+
+  <nav class="navbar-apropos-bas">
+    <ul>
+      <li><a href="index.html">Accueil / Home</a></li>
+      <li><a href="Projets_global.html">Projets / Projects</a></li>
+      <li><a href="automatisations.html">Apps & Automatisations</a></li>
+      <li><a href="a-propos.html">À propos / About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</section>
+
+<!-- === CONTENU PRINCIPAL === -->
+<main class="project-detail-section">
+
+  <div class="project-detail-card">
+
+    <h2 class="project-title">Application – Analyse des Véhicules Électriques</h2>
+
+    <img src="images/ve1.png" 
+         alt="Dashboard Véhicules Électriques"
+         class="project-detail-img">
+
+    <div class="project-description">
+
+      <!-- OBJECTIF -->
+      <p>
+        <strong class="gold">🎯 Objectif :</strong><br>
+        Fournir une application simple et intuitive pour analyser les caractéristiques de centaines
+        de modèles de véhicules électriques : autonomie, efficacité, types dominants, marques,
+        batterie et performances.
+      </p>
+
+      <!-- PARTICULARITÉ -->
+      <p>
+        <strong class="gold">🚀 Particularités de l'application :</strong><br>
+        ✔ Interface interactive construite avec Streamlit<br>
+        ✔ Filtrage dynamique des modèles (marques, types, carrosseries)<br>
+        ✔ KPIs calculés à la volée (autonomie, efficacité, modèles uniques)<br>
+        ✔ Visualisations interactives avec Plotly<br>
+        ✔ Utilisation de DuckDB pour une gestion rapide du dataset<br>
+        ✔ Structure type “true dashboard” avec cartes, graphiques, et tableaux
+      </p>
+
+      <!-- INDICATEURS -->
+      <p>
+        <strong class="gold">📊 Indicateurs clés :</strong><br>
+        - Autonomie moyenne des véhicules<br>
+        - Modèle le plus économe (Wh/km)<br>
+        - Type de véhicule dominant (SUV, berline, etc.)<br>
+        - Nombre total de modèles analysés<br>
+        - Répartition des véhicules par segment<br>
+        - Marques les plus représentées<br>
+        - Efficacité énergétique moyenne
+      </p>
+
+      <!-- OUTILS -->
+      <p>
+        <strong class="gold">🛠️ Technologies utilisées :</strong><br>
+        Python (Pandas, DuckDB), Streamlit, Plotly Express, HTML/CSS custom,
+        Data Cleaning & Aggregation.
+      </p>
+
+      <!-- GITHUB -->
+      <div class="project-links">
+        <a href="https://github.com/jessik-19/MBAESG_EVALUATION_MANAGEMENT_OPERATIONNEL.git" 
+           target="_blank" 
+           class="github-button">
+          🔗 Voir le code GitHub
+        </a>
+      </div>
+
+      <!-- GALERIE -->
+      <h3 class="gold" style="margin-top: 30px;">📸 Aperçu du Dashboard</h3>
+      <div class="gallery-mails">
+        <div class="shot"><img src="images/ve1.png"></div>
+        <div class="shot"><img src="images/ve2.png"></div>
+        <div class="shot"><img src="images/ve3.png"></div>
+        <div class="shot"><img src="images/ve4.png"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="back-link">
+    <a href="automatisations.html">⬅️ Retour aux automatisations</a>
+  </div>
+
+</main>
+
+</body>
+</html>
