@@ -12,7 +12,7 @@
   <section class="header-apropos index-header">
   <img src="images/ba.jpg" alt="Bannière Data" class="banniere-img">
   <div class="banniere-contenu">
-    <h1>Ange Muriel Kamguem Mande</h1>
+    <h1 id="name-effect">Ange Muriel Kamguem Mande</h1>
     <p>Automatisation – Analyse – Décision – Visualisation – IA appliquée</p>
   </div>
   <nav class="navbar-apropos-bas">
@@ -31,7 +31,7 @@
     <h2>Des données… aux solutions concrètes</h2>
     <p>Avec mes compétences en Data Engineering et automatisation, je transforme les chiffres en actions mesurables et les process en gains de temps.</p>
     <div class="btn-cv">
-      <a href="chemin/vers/ton_cv.pdf" target="_blank" class="btn-cv">📄 Télécharger mon CV</a>
+      <a href="Cv_Ange_Muriel_MANDE.pdf" target="_blank" class="btn-cv">📄 Télécharger mon CV</a>
     </div>
 
 
@@ -45,7 +45,7 @@
     <div class="experience-card">
       <img src="images/logo_accor.png" alt="Accor">
       <h3>Data Quality Analyst – Accor</h3>
-      <p><strong>Septembre 2025 – Février 2026</strong></p>
+      <p><strong>Septembre 2025 – Mars 2026</strong></p>
       <ul>
         <li>Contrôle de qualité des données comptables (référentiels, codifications, doublons...)</li>
         <li>Vérification, nettoyage et fiabilisation des données avec Power BI, Excel et Python</li>
@@ -129,30 +129,32 @@ document.querySelectorAll('.experience-card').forEach(card => {
 });
 </script>
 <script>
-// Apparition douce du nom et du texte du header
+// Effet de frappe pour le nom
 window.addEventListener("DOMContentLoaded", () => {
-  const name = document.querySelector(".banniere-contenu h1");
-  const subtitle = document.querySelector(".banniere-contenu p");
+  const nameElement = document.getElementById("name-effect");
+  const fullText = "Ange Muriel Kamguem Mande";
+  let index = 0;
+  nameElement.textContent = "";
 
-  // D'abord, on cache tout
-  name.style.opacity = "0";
-  name.style.transform = "translateY(40px)";
-  subtitle.style.opacity = "0";
-  subtitle.style.transform = "translateY(40px)";
+  const typeWriter = () => {
+    if (index < fullText.length) {
+      nameElement.textContent += fullText.charAt(index);
+      index++;
+      setTimeout(typeWriter, 100);
+    } else {
+      // Après la frappe, apparition du sous-titre
+      const subtitle = document.querySelector(".banniere-contenu p");
+      subtitle.style.opacity = "0";
+      subtitle.style.transform = "translateY(40px)";
+      setTimeout(() => {
+        subtitle.style.transition = "opacity 1.6s ease, transform 1.6s ease";
+        subtitle.style.opacity = "1";
+        subtitle.style.transform = "translateY(0)";
+      }, 500);
+    }
+  };
 
-  // Le nom apparaît doucement
-  setTimeout(() => {
-    name.style.transition = "opacity 1.8s ease, transform 1.8s ease";
-    name.style.opacity = "1";
-    name.style.transform = "translateY(0)";
-  }, 300);
-
-  // Puis le sous-titre juste après
-  setTimeout(() => {
-    subtitle.style.transition = "opacity 1.6s ease, transform 1.6s ease";
-    subtitle.style.opacity = "1";
-    subtitle.style.transform = "translateY(0)";
-  }, 1500);
+  typeWriter();
 });
 </script>
 

@@ -28,35 +28,51 @@
   </nav>
 </section>
 
-<!-- === SECTION CONTACT === -->
-<main class="contact-section">
+<!-- === CONTENU PRINCIPAL === -->
+<main class="about-section">
+  <!-- 🟡 SECTION FORMULAIRE -->
+  <section class="about-card gauche">
+    <div class="about-content">
+      <h2>💌 Envoyez-moi un message</h2>
+      <form class="contact-form" action="mailto:kamman112000@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Votre Nom & Prénom :</label>
+        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
 
-  <h2 class="contact-title">💌 Envoyez-moi un message</h2>
+        <label for="email">Votre Email :</label>
+        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
 
-  <form class="contact-form" action="mailto:kamman112000@gmail.com" method="post" enctype="text/plain">
-    <label for="name">Votre Nom & Prénom :</label>
-    <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+        <label for="message">Votre Message :</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
 
-    <label for="email">Votre Email :</label>
-    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+        <button type="submit" class="btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </section>
 
-    <label for="message">Votre Message :</label>
-    <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
-
-    <button type="submit" class="btn-primary">Envoyer</button>
-  </form>
-
-  <div class="contact-infos">
-    <p>📧 <strong>Email :</strong> kamman112000@gmail.com</p>
-    <p>💼 <strong>LinkedIn :</strong> 
-      <a href="https://www.linkedin.com/in/ange-muriel-kamguem-mande-aabaa7295/" target="_blank">
-        Mon profil
-      </a>
-    </p>
-    <p>📍 Basée à Paris – Ouverte aux opportunités en CDI & mobilité</p>
-  </div>
-
+  <!-- 🟡 SECTION INFOS CONTACT -->
+  <section class="about-card droite">
+    <div class="about-content">
+      <h2>📞 Mes Coordonnées</h2>
+      <p><strong>📧 Email :</strong> kamman112000@gmail.com</p>
+      <p><strong>💼 LinkedIn :</strong>
+        <a href="https://www.linkedin.com/in/ange-muriel-kamguem-mande-aabaa7295/" target="_blank">
+          Mon profil
+        </a>
+      </p>
+      <p><strong>📍 Localisation :</strong> Basée à Paris – Ouverte aux opportunités en CDI & mobilité</p>
+    </div>
+  </section>
 </main>
+<script>
+  // Apparition fluide des éléments à propos
+const aboutObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.2 });
 
+document.querySelectorAll('.about-card')
+  .forEach(el => aboutObserver.observe(el));
+</script>
 </body>
 </html>

@@ -97,21 +97,36 @@
         </div>
       </div>
       <div class="project-bubble">
-  <img src="images/demandes.png" alt="Suivi des Demandes" />
-  <div class="bubble-info">
-    <h3>Suivi des Demandes – Power BI</h3>
-    <p>Analyse complète des demandes internes : créations, modifications, typologies et performance.</p>
-    <a href="suivi_demandes.html" class="btn-bubble">Voir plus</a>
-  </div>
-</div>
+        <img src="images/demandes.png" alt="Suivi des Demandes" />
+        <div class="bubble-info">
+          <h3>Suivi des Demandes – Power BI</h3>
+          <p>Analyse complète des demandes internes : créations, modifications, typologies et performance.</p>
+          <a href="suivi_demandes.html" class="btn-bubble">Voir plus</a>
+        </div>
+      </div>
+      <div class="project-bubble">
+        <img src="images/fournisseurs.png" alt="Suivi des Demandes" />
+        <div class="bubble-info">
+          <h3>Analyse Globale des fournisseurs – Power BI</h3>
+          <p>Analyse complète du référentiel fournisseurs : typologies, qualité des données, risques fiscaux et leviers d’optimisation.</p>
+          <a href="fournisseurs.html" class="btn-bubble">Voir plus</a>
+        </div>
+      </div>
 
     </section>
   </main>
 
   <!-- === TOUS LES SCRIPTS === -->
   <script>
+    // Apparition fluide des bulles
+const bubbleObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.2 });
 
-// Effet de profondeur uniquement sur les bulles, pas sur les titres
+document.querySelectorAll('.project-bubble')
+  .forEach(el => bubbleObserver.observe(el));
 
 // === GOUTTES DORÉES – PLUIE LUMINEUSE ===
 const section = document.querySelector('.projects-section');

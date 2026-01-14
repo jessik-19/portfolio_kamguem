@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comparaison des Sièges INSEE</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<!-- === HEADER UNIFIÉ === -->
+<section class="header-apropos index-header">
+  <img src="images/ba.jpg" class="banniere-img" alt="Bannière Data">
+
+  <div class="banniere-contenu">
+    <h2>Comparaison des Sièges INSEE</h2>
+    <p>Application interne de détection des écarts entre les fichiers internes et les données officielles INSEE.</p>
+  </div>
+
+  <nav class="navbar-apropos-bas">
+    <ul>
+      <li><a href="index.html">Accueil / Home</a></li>
+      <li><a href="Projets_global.html">Projets / Projects</a></li>
+      <li><a href="automatisations.html">Apps & Automatisations</a></li>
+      <li><a href="a-propos.html">À propos / About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</section>
+
+<!-- === CONTENU PRINCIPAL === -->
+<main class="project-detail-section">
+
+  <div class="project-detail-card">
+    <h2 class="project-title">Application – Comparaison des Sièges INSEE</h2>
+
+    <img src="images/comparaison_sieges_insee (2).png" 
+         alt="Application INSEE siège comparatif"
+         class="project-detail-img">
+
+    <div class="project-description">
+
+      <!-- OBJECTIF -->
+      <p>
+        <strong class="gold">🎯 Objectif :</strong><br>
+        Concevoir une application permettant de <strong>comparer les informations de siège</strong> entre les bases internes et les données INSEE, afin de détecter les incohérences de nom, ville ou code établissement.
+      </p>
+
+      <!-- PARTICULARITE -->
+      <p>
+        <strong class="gold">🚀 Particularité :</strong><br>
+        L’application réalise un <strong>matching intelligent</strong> entre les fichiers Excel internes et les correspondances INSEE, <strong>identifie les écarts</strong> ligne par ligne, puis génère automatiquement un fichier de synthèse. Elle met aussi en évidence les doublons et les cas à surveiller.
+      </p>
+
+      <!-- INDICATEURS -->
+      <p>
+        <strong class="gold">📊 Indicateurs & Analyses générées :</strong><br>
+        - Taux de correspondance des sièges<br>
+        - Nombre d’écarts détectés (nom / ville / code)<br>
+        - Cas de doublons / adresses multiples<br>
+        - Liste des établissements non retrouvés<br>
+        - Matching ville INSEE / ville interne (avec taux de similarité)<br>
+        - Résumé des cas à revoir manuellement
+      </p>
+
+      <!-- OUTILS -->
+      <p>
+        <strong class="gold">🛠 Outils & Technologies :</strong><br>
+        Python (pandas, difflib), Streamlit, Excel, nettoyage des adresses, recherche floue, logique de matching, visualisation des résultats.
+      </p>
+
+      <!-- CONFIDENTIALITE -->
+      <p>
+        <strong class="gold">🔒 IMPORTANT :</strong><br>
+        Aucun identifiant sensible n’est affiché. L'application utilise des extraits de tests anonymisés. Code disponible sur GitHub.
+      </p>
+
+      <!-- BOUTON -->
+      <div class="project-links">
+        <a href="https://github.com/jessik-19/comparaison-sieges-insee" 
+           target="_blank" 
+           class="github-button">
+          🔗 Voir le code GitHub
+        </a>
+      </div>
+
+      <!-- GALERIE -->
+      <h3 class="gold" style="margin-top: 30px;">📸 Aperçu de l'application</h3>
+      <div class="gallery-mails">
+        <div class="shot"><img src="images/comparaison_sieges_insee (2).png"></div>
+        <div class="shot"><img src="images/comparaison_sieges_insee (1).png"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="back-link">
+    <a href="automatisations.html">⬅️ Retour aux automatisations</a>
+  </div>
+
+</main>
+
+</body>
+</html>

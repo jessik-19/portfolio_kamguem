@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard – Vérification des Identifiants Grand Back</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!-- === HEADER UNIFIÉ === -->
+<section class="header-apropos index-header">
+  <img src="images/ba.jpg" class="banniere-img" alt="Bannière Data">
+
+  <div class="banniere-contenu">
+    <h2>Dashboard – Vérification des Identifiants Grand Back</h2>
+    <p>KPIs, filtres dynamiques et visualisations interactives.</p>
+  </div>
+
+  <nav class="navbar-apropos-bas">
+    <ul>
+      <li><a href="index.html">Accueil / Home</a></li>
+      <li><a href="Projets_global.html">Projets / Projects</a></li>
+      <li><a href="automatisations.html">Apps & Automatisations</a></li>
+      <li><a href="a-propos.html">À propos / About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</section>
+
+<!-- === CONTENU PRINCIPAL === -->
+<main class="project-detail-section">
+
+  <div class="project-detail-card">
+
+    <h2 class="project-title">Vérification des Identifiants Grand Back</h2>
+
+    <img src="images/identifiants.png" 
+         alt="Dashboard responsabilité grand back"
+         class="project-detail-img">
+
+    <div class="project-description">
+<!-- === APPLICATION IDENTIFIANTS === -->
+  <p><strong class="gold">🎯 Objectif :</strong><br>
+    Automatiser la vérification des identifiants attendus pour chaque utilisateur d’une équipe, en comparant les données issues de trois fichiers (périmètre, back, affectations).
+  </p>
+
+  <p><strong class="gold">🚀 Particularités :</strong><br>
+    ✓ Interface intuitive développée avec <strong>Streamlit</strong><br>
+    ✓ Détection automatique des identifiants manquants par utilisateur<br>
+    ✓ Résumé global avec calcul du <strong>nombre total d’identifiants manquants</strong><br>
+    ✓ <strong>Téléchargement Excel</strong> généré automatiquement avec deux feuilles (vue globale & vue détaillée)<br>
+    ✓ Design professionnel (logo, couleurs Accor, mise en forme lisible)
+  </p>
+
+  <p><strong class="gold">📊 Indicateurs clés :</strong><br>
+    - Nombre total d’utilisateurs<br>
+    - Nombre d’identifiants manquants par personne<br>
+    - Liste des identifiants non attribués<br>
+    - Taux de couverture des affectations
+  </p>
+
+  <p><strong class="gold">🛠 Technologies utilisées :</strong><br>
+    Python (Pandas), Streamlit, ExcelWriter, CSS personnalisé
+  </p>
+  <!-- GITHUB -->
+      <div class="project-links">
+        <a href="https://github.com/jessik-19/Projet-Identifiants.git" 
+           target="_blank" 
+           class="github-button">
+          🔗 Voir le code GitHub
+        </a>
+      </div>
+
+      <!-- GALERIE -->
+      <h3 class="gold" style="margin-top: 30px;">📸 Aperçu du Dashboard</h3>
+      <div class="gallery-mails">
+        <div class="shot"><img src="images/identifiants.png"></div>
+        <div class="shot"><img src="images/identifiant2 (1).png"></div>
+        <div class="shot"><img src="images/identifiant2 (2).png"></div>
+        <div class="shot"><img src="images/identifiant2 (3).png"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="back-link">
+    <a href="automatisations.html">⬅️ Retour aux automatisations</a>
+  </div>
+
+</main>
+
+</body>
+</html>

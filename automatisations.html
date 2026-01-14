@@ -26,109 +26,122 @@
     </nav>
   </section>
 
-  <!-- === SECTION AUTOMATISATIONS === -->
-  <main class="automations-section">
-    <br>
-     <br>
-    <h2 class="section-title">Applications et automatisations</h2>
-
-    <div class="automation-grid">
-
-      <!-- Bloc 1 -->
-      <div class="automation-card gauche fade-in">
-        <img src="images/identifiants.png" alt="App Contrôle Identifiants" />
-        <div class="automation-content">
-          <h2>Contrôle des identifiants utilisateurs</h2>
-          <p class="objectif">Objectif : Identifier les utilisateurs ne disposant pas de tous les identifiants attendus par profil. Application créée avec Streamlit pour vérification automatique via import de 3 fichiers.</p>
-          <p class="tech"><strong>Tech :</strong> Python (pandas), Streamlit, export Excel.</p>
-          <br>
-          <a href="https://github.com/jessik-19/Projet-Identifiants.git" target="_blank" class="btn-primary">Voir le code</a>
-        </div>
+  <!-- === CONTENU PRINCIPAL === -->
+  <main class="about-section">
+    <!-- 🟡 SECTION 1 : Contrôle Identifiants -->
+    <section class="about-card gauche">
+      <img src="images/identifiants.png" alt="App Contrôle Identifiants" />
+      <div class="about-content">
+        <h2>Contrôle des identifiants utilisateurs</h2>
+        <p><strong>Objectif :</strong> Identifier les utilisateurs ne disposant pas de tous les identifiants attendus par profil. Application créée avec Streamlit pour vérification automatique via import de 3 fichiers.</p>
+        <p><strong>Tech :</strong> Python (pandas), Streamlit, export Excel.</p>
+        <a href="identifiant_detail.html" class="btn-primary">Voir l’analyse complète</a>
       </div>
+    </section>
 
-      <!-- Bloc 2 -->
-      <div class="automation-card droite fade-in">
-        <img src="images/responsabilites.png" alt="App Grand Back" />
-        <div class="automation-content">
-          <h2>Vérification des responsabilités Grand Back</h2>
-          <p class="objectif">Objectif : Comparer les responsabilités attribuées aux utilisateurs avec celles attendues selon leur type de profil.</p>
-          <p class="tech"><strong>Tech :</strong> Streamlit, Python (merge, comparaison de fichiers), interface personnalisée avec CSS.</p>
-          <br>
-          <a href="https://github.com/jessik-19/Projet-Responsabilit-.git" target="_blank" class="btn-primary">Voir le code</a>
-        </div>
+    <!-- 🟡 SECTION 2 : Vérification Responsabilités -->
+    <section class="about-card droite">
+      <img src="images/responsabilites.png" alt="App Grand Back" />
+      <div class="about-content">
+        <h2>Vérification des responsabilités Grand Back</h2>
+        <p><strong>Objectif :</strong> Comparer les responsabilités attribuées aux utilisateurs avec celles attendues selon leur type de profil.</p>
+        <p><strong>Tech :</strong> Streamlit, Python (merge, comparaison de fichiers), interface personnalisée avec CSS.</p>
+        <a href="responsabilité-detail.html" class="btn-primary">Voir l’analyse complète</a>
       </div>
+    </section>
 
-      <!-- Bloc 3 -->
-      <div class="automation-card gauche fade-in">
-        <img src="images/vehicule_electric.png" alt="App Power Automate" />
-        <div class="automation-content">
-          <h2>Automatisation des rapports PDF</h2>
-          <p class="objectif">Objectif : Génération automatique de rapports PDF mensuels depuis Power BI et envoi par mail via Power Automate.</p>
-          <p class="tech"><strong>Tech :</strong> Power BI, Power Automate, Outlook, export automatique.</p>
-          <br>
-          <a href="ve-dashboard-detail.html" class="btn-primary">Voir l’analyse complète</a>
-         </div>
+    <!-- 🟡 SECTION 3 : Automatisation PDF -->
+    <section class="about-card gauche">
+      <img src="images/vehicule_electric.png" alt="App Power Automate" />
+      <div class="about-content">
+        <h2>Automatisation des rapports PDF</h2>
+        <p><strong>Objectif :</strong> Génération automatique de rapports PDF mensuels depuis Power BI et envoi par mail via Power Automate.</p>
+        <p><strong>Tech :</strong> Power BI, Power Automate, Outlook, export automatique.</p>
+        <a href="ve-dashboard-detail.html" class="btn-primary">Voir l’analyse complète</a>
       </div>
+    </section>
 
-      <!--Bloc 4-->
-      <div class="automation-card gauche fade-in">
-  <img src="images/monday-app.png" alt="Qualité & Uniformisation – Monday" />
-  <div class="automation-content">
-    <h2>Qualité & Uniformisation – Tableaux Monday</h2>
-    <p class="objectif">
-      Application interne permettant d’analyser la complétude, l’uniformisation et la cohérence
-      des données issues des tableaux Monday.com (Pôles Finance, Cash & Consolidation).
-    </p>
-    <p class="tech">
-      <strong>Tech :</strong> Python (Pandas), Streamlit, Analyse de complétude, Data Quality, Export automatique.
-    </p>
-    <br>
-    <a href="qualite-monday-detail.html" class="btn-primary">Voir l’analyse complète</a>
-  </div>
-</div>
+    <!-- 🟡 SECTION 4 : Qualité Monday -->
+    <section class="about-card droite">
+      <img src="images/monday-app.png" alt="Qualité & Uniformisation – Monday" />
+      <div class="about-content">
+        <h2>Qualité & Uniformisation – Tableaux Monday</h2>
+        <p><strong>Objectif :</strong> Application interne permettant d’analyser la complétude, l’uniformisation et la cohérence des données issues des tableaux Monday.com (Pôles Finance, Cash & Consolidation).</p>
+        <p><strong>Tech :</strong> Python (Pandas), Streamlit, Analyse de complétude, Data Quality, Export automatique.</p>
+        <a href="qualite-monday-detail.html" class="btn-primary">Voir l’analyse complète</a>
+      </div>
+    </section>
 
-
-    </div>
+    <!-- 🟡 SECTION 5 : Control fiscal -->
+    <section class="about-card gauche">
+      <img src="images/control_fiscal (2).png" alt="Contrôle fiscal fournisseurs" />
+      <div class="about-content">
+        <h2>Application - Contrôle fiscal fournisseurs</h2>
+        <p><strong>Objectif :</strong>  Détecter automatiquement les fournisseurs avec informations fiscales manquantes (champ fiscal ou TVA intracom), améliorer la conformité et fiabiliser les bases.</p>
+        <p><strong>Tech :</strong> Python, Streamlit, Pandas, Excel (.xlsx), Power BI (version analyse globale) et Export automatique.</p>
+        <a href="control_fiscal.html" class="btn-primary">Voir l’analyse complète</a>
+      </div>
+    </section>
+    <!-- 🟡 SECTION 6 : Comparaison des Sièges INSEE -->
+    <section class="about-card droite">
+      <img src="images/comparaison_sieges_insee (2).png" alt="Contrôle fiscal fournisseurs" />
+      <div class="about-content">
+        <h2>Application - Comparaison des Sièges INSEE</h2>
+        <p><strong>Objectif :</strong>   Concevoir une application permettant de <strong>comparer les informations de siège</strong> entre les bases internes et les données INSEE, afin de détecter les incohérences de nom, ville ou code établissement.</p>
+        <p><strong>Tech :</strong> Python (pandas, difflib), Streamlit, Excel, nettoyage des adresses, recherche floue, logique de matching, visualisation des résultats.</p>
+        <a href="Comparaison8Sièges_INSEE.html" class="btn-primary">Voir l’analyse complète</a>
+      </div>
+    </section>
+    <!-- 🟡 SECTION 7 : Comparaison des Etablissements INSEE -->
+    <section class="about-card gauche">
+      <img src="images/comparaison_sieges_insee (2).png" alt="Contrôle fiscal fournisseurs" />
+      <div class="about-content">
+        <h2>Application - Comparaison des Etablissements INSEE</h2>
+        <p><strong>Objectif :</strong>  Identifier les <strong>écarts entre les établissements enregistrés dans les bases internes</strong> (réels, génériques) et les <strong>fichiers de référence officiels</strong>.
+        L’application permet une <strong>vérification croisée automatisée</strong> pour fiabiliser les codes et statuts d’établissements.
+      </p>
+        <p><strong>Tech :</strong>  Python, Streamlit, Pandas, fichiers Excel internes et fichiers de référence, logique de filtrage croisé, visualisation.</p>
+        <a href="Comparaison_établissements.html" class="btn-primary">Voir l’analyse complète</a>
+      </div>
+    </section>
   </main>
 
-  <!-- === EFFETS JAVASCRIPT === -->
   <script>
-  // Apparition progressive des cartes
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.15 });
+    // Apparition fluide des éléments à propos
+const aboutObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.2 });
 
-  document.querySelectorAll('.fade-in').forEach(card => observer.observe(card));
+document.querySelectorAll('.about-card')
+  .forEach(el => aboutObserver.observe(el));
 
-  // Bulles dorées et blanches animées
-  const section = document.querySelector('.automations-section');
-  for (let i = 0; i < 100; i++) {
-    const drop = document.createElement('div');
-    drop.classList.add('raindrop');
-    drop.style.left = Math.random() * 100 + 'vw';
-    drop.style.top = (Math.random() * 60 + 40) + 'vh';
-    drop.style.width = drop.style.height = (Math.random() * 5 + 3) + 'px';
-    drop.style.animationDuration = (Math.random() * 5 + 4) + 's';
-    drop.style.animationDelay = Math.random() * 3 + 's';
-    section.appendChild(drop);
-  }
+// Bulles dorées et blanches animées
+const section = document.querySelector('.about-section');
+for (let i = 0; i < 100; i++) {
+  const drop = document.createElement('div');
+  drop.classList.add('raindrop');
+  drop.style.left = Math.random() * 100 + 'vw';
+  drop.style.top = (Math.random() * 60 + 40) + 'vh';
+  drop.style.width = drop.style.height = (Math.random() * 5 + 3) + 'px';
+  drop.style.animationDuration = (Math.random() * 5 + 4) + 's';
+  drop.style.animationDelay = Math.random() * 3 + 's';
+  section.appendChild(drop);
+}
 
-  for (let i = 0; i < 50; i++) {
-    const bubble = document.createElement('div');
-    bubble.classList.add('white-bubble');
-    bubble.style.left = Math.random() * 100 + 'vw';
-    bubble.style.top = Math.random() * 130 + 'vh';
-    const size = Math.random() * 10 + 3;
-    bubble.style.width = bubble.style.height = `${size}px`;
-    bubble.style.animationDuration = (Math.random() * 8 + 6) + 's';
-    bubble.style.animationDelay = (Math.random() * 4) + 's';
-    section.appendChild(bubble);
-  }
-  </script>
+for (let i = 0; i < 50; i++) {
+  const bubble = document.createElement('div');
+  bubble.classList.add('white-bubble');
+  bubble.style.left = Math.random() * 100 + 'vw';
+  bubble.style.top = Math.random() * 130 + 'vh';
+  const size = Math.random() * 10 + 3;
+  bubble.style.width = bubble.style.height = `${size}px`;
+  bubble.style.animationDuration = (Math.random() * 8 + 6) + 's';
+  bubble.style.animationDelay = (Math.random() * 4) + 's';
+  section.appendChild(bubble);
+}
+</script>
 </body>
 </html>
 
