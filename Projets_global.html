@@ -116,58 +116,18 @@
     </section>
   </main>
 
-  <!-- === TOUS LES SCRIPTS === -->
+  <!-- === SCRIPTS === -->
   <script>
-    // Apparition fluide des bulles
-const bubbleObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.2 });
+    // Apparition fluide des cartes au scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add(‘visible’);
+      });
+    }, { threshold: 0.1 });
 
-document.querySelectorAll('.project-bubble')
-  .forEach(el => bubbleObserver.observe(el));
-
-// === GOUTTES DORÉES – PLUIE LUMINEUSE ===
-const section = document.querySelector('.projects-section');
-
-// 🔥 150 gouttes pour un effet visible et homogène
-for (let i = 0; i < 150; i++) {
-  const drop = document.createElement('div');
-  drop.classList.add('raindrop');
-
-  // position aléatoire sur tout l’écran
-  drop.style.left = Math.random() * 100 + 'vw';
-  drop.style.top = (Math.random() * 60 + 40) + 'vh';
-  drop.style.width = drop.style.height = (Math.random() * 6 + 2) + 'px';
-  drop.style.animationDuration = (Math.random() * 6 + 3) + 's';
-  drop.style.animationDelay = Math.random() * 5 + 's';
-
-  section.appendChild(drop);
-}
-
-// === BULLES BLANCHES LUMINEUSES ===
-// 🔥 80 bulles réparties sur toute la hauteur
-for (let i = 0; i < 80; i++) {
-  const bubble = document.createElement('div');
-  bubble.classList.add('white-bubble');
-
-  bubble.style.left = Math.random() * 100 + 'vw';
-  bubble.style.top = (Math.random() * 60 + 40) + 'vh';
-  const size = Math.random() * 10 + 3;
-  bubble.style.width = bubble.style.height = `${size}px`;
-  bubble.style.animationDuration = (Math.random() * 6 + 7) + 's';
-  bubble.style.animationDelay = (Math.random() * 5) + 's';
-
-  section.appendChild(bubble);
-}
-
-// Animation légère et élégante des bulles (comme un flottement)
-document.querySelectorAll('.project-bubble').forEach((bubble, index) => {
-  bubble.style.animation = `float 6s ease-in-out ${index * 0.3}s infinite`;
-});
-
-</script>
+    document.querySelectorAll(‘.project-bubble’)
+      .forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
